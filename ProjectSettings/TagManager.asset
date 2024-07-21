@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Zemin
+  - Engel
   layers:
   - Default
   - TransparentFX
@@ -12,6 +13,7 @@ TagManager:
   - 
   - Water
   - UI
+  - Zemin
   - 
   - 
   - 
@@ -25,8 +27,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - "kap\u0131"
   - 
   - 
   - 

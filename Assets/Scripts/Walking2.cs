@@ -15,6 +15,7 @@ private Rigidbody2D rb;
 private Animator anim;
 private SpriteRenderer spriteRenderer;
 
+
 void Awake()//oyun motoru açılınca çalışan
 {
     anim = GetComponent<Animator>(); //caching animator
