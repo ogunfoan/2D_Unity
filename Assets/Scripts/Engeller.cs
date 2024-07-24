@@ -9,6 +9,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Awake()
     {
+        
         _scene = SceneManager.GetActiveScene(); //scene managerdan aktif scenei alıyoruz
     }
     private void OnTriggerEnter2D(Collider2D other) //player ile temas edersen seviyeyi yeniden başlat
