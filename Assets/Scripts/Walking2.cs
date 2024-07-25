@@ -10,38 +10,38 @@ public float jumpForce;
 public float speed = 1.0f;
 private bool Jump;
 private bool Grounded = true;
-private bool moving;
-private Rigidbody2D rb;
-private Animator anim;
-private SpriteRenderer spriteRenderer;
+private bool Moving;
+private Rigidbody2D _rigidbody2D;
+private Animator _anim;
+private SpriteRenderer _spriteRenderer;
 
 
 void Awake()//oyun motoru açılınca çalışan
 {
-    anim = GetComponent<Animator>(); //caching animator
+    _anim = GetComponent<Animator>(); //caching animator
 
     
 }
 void Start()//motor başladıktan sonra tanımladıklarımız
 {
-    rb = GetComponent<Rigidbody2D>(); //caching rigidbody
-    spriteRenderer = GetComponent<SpriteRenderer>();
+    _rigidbody2D = GetComponent<Rigidbody2D>(); //caching rigidbody
+    _spriteRenderer = GetComponent<SpriteRenderer>();
 }
 private void FixedUpdate()//sabit çalışanlar
 {
-if (rb.velocity != Vector2.zero)
+if (_rigidbody2D.velocity != Vector2.zero)
 {
-    moving = true;
+    Moving = true;
 }    
 else
 {
-    moving = false;
+    Moving = false;
 }
-rb.velocity = new Vector2(speed * moveDirection, rb.velocity.y);
+_rigidbody2D.velocity = new Vector2(speed * moveDirection, _rigidbody2D.velocity.y);
 
 if (Jump == true)
 {
-    rb.velocity = new Vector2 (rb.velocity.x, jumpForce);
+    _rigidbody2D.velocity = new Vector2 (_rigidbody2D.velocity.x, jumpForce);
     Jump = false;
 }
 }
@@ -53,33 +53,33 @@ private void Update()//düzenli tekrarladıklarımız
         if (Input.GetKey(KeyCode.A))
         {
             moveDirection = -1.0f;
-            spriteRenderer.flipX = true;
-            anim.SetFloat("Speed", speed);
+            _spriteRenderer.flipX = true;
+            _anim.SetFloat("Speed", speed);
         }
         else if(Input.GetKey(KeyCode.D))
         {
             moveDirection = 1.0f;
-            spriteRenderer.flipX=false;
-            anim.SetFloat("Speed", speed);
+            _spriteRenderer.flipX=false;
+            _anim.SetFloat("Speed", speed);
         }
     }
     else if (Grounded == true)
     {
         moveDirection = 0.0f;
-        anim.SetFloat("Speed", 0.0f);
+        _anim.SetFloat("Speed", 0.0f);
     }
 
     if (Grounded == true && Input.GetKey(KeyCode.W))
     {
         Jump = true;
         Grounded = false;
-        anim.SetTrigger("Jump");
+        _anim.SetTrigger("Jump");
     }
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.CompareTag("Zemin"))
         {
-            anim.SetBool("Grounded", true);
+            _anim.SetBool("Grounded", true);
             Grounded = true;         
         } }
 }
