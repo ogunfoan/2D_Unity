@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
     public int pointsa=0; 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (gameObject.CompareTag("muz"))
+        if (other.gameObject.CompareTag("muz"))
         {
             Destroy(other.gameObject);
             pointsa++;
