@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6866275389704458326}
   m_Layer: 0
   m_Name: Reward
-  m_TagString: Reward
+  m_TagString: muz
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,5 +104,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0625, y: 0.9375, z: 0.2}
-  m_Center: {x: 0, y: 0.46875, z: 0}
+  m_Size: {x: 1.0765672, y: 0.9375, z: 0.2}
+  m_Center: {x: -0.0070335865, y: 0.46875, z: 0}
