@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &81382205 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2219003729487463706, guid: 14c3dac2323b145509f33e22925e38e5, type: 3}
+  m_PrefabInstance: {fileID: 3723623973328062414}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &81382213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81382205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb44346c18944aa0b90d83b717c74e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsa: 0
 --- !u!1 &280025259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1169,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2219003729487463706, guid: 14c3dac2323b145509f33e22925e38e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81382213}
   m_SourcePrefab: {fileID: 100100000, guid: 14c3dac2323b145509f33e22925e38e5, type: 3}
 --- !u!1001 &5102492399661899008
 PrefabInstance:
@@ -1258,25 +1279,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6866275389704458326, guid: bec53630fd24647b2a9eaa97ef8208e2, type: 3}
-      propertyPath: m_Size.x
-      value: 1.0765672
-      objectReference: {fileID: 0}
-    - target: {fileID: 6866275389704458326, guid: bec53630fd24647b2a9eaa97ef8208e2, type: 3}
-      propertyPath: m_Center.x
-      value: -0.0070335865
-      objectReference: {fileID: 0}
-    - target: {fileID: 6866275389704458326, guid: bec53630fd24647b2a9eaa97ef8208e2, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9125649050140342292, guid: bec53630fd24647b2a9eaa97ef8208e2, type: 3}
       propertyPath: m_Name
       value: Reward
-      objectReference: {fileID: 0}
-    - target: {fileID: 9125649050140342292, guid: bec53630fd24647b2a9eaa97ef8208e2, type: 3}
-      propertyPath: m_TagString
-      value: muz
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
