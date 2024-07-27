@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4099449053259778146}
   - component: {fileID: 7686255049793141543}
   - component: {fileID: 8888701844073413083}
+  - component: {fileID: 8423302701487269826}
   m_Layer: 0
   m_Name: Reward
   m_TagString: muz
@@ -130,3 +131,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0625, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!95 &8423302701487269826
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9125649050140342292}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c39c6d63a0a7437fb29e8190687fc3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

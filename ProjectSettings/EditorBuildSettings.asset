@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bitis.unity
     guid: 74d9ecb4739c54913814d6fb1730fed2
+  - enabled: 1
+    path: Assets/Scenes/kaybettin.unity
+    guid: 8d2965bdfbf4e4346ac3fc6f872f1e13
   m_configObjects: {}
