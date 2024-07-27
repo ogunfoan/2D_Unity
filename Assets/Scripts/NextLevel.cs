@@ -25,4 +25,9 @@ public class NextLevel : MonoBehaviour
     {
         SceneManager.LoadScene(_Scene.buildIndex + 1);
     }
+
+    public void firstLevel()
+    {
+        SceneManager.LoadScene(_Scene.buildIndex - 3);
+    }
 }

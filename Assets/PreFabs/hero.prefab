@@ -187,8 +187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDirection: 0
-  jumpForce: 5
-  speed: 1.3
+  jumpForce: 8.27
+  speed: 4.36
 --- !u!114 &4805916992563429293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb44346c18944aa0b90d83b717c74e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsa: 0
+  _yazialani: {fileID: 0}
 --- !u!82 &7528110063537029963
 AudioSource:
   m_ObjectHideFlags: 0

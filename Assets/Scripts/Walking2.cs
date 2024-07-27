@@ -19,13 +19,11 @@ private SpriteRenderer _spriteRenderer;
 void Awake()//oyun motoru açılınca çalışan
 {
     _anim = GetComponent<Animator>(); //caching animator
-
-    
 }
 void Start()//motor başladıktan sonra tanımladıklarımız
 {
     _rigidbody2D = GetComponent<Rigidbody2D>(); //caching rigidbody
-    _spriteRenderer = GetComponent<SpriteRenderer>();
+    _spriteRenderer = GetComponent<SpriteRenderer>();//sprite renderer
 }
 private void FixedUpdate()//sabit çalışanlar
 {
@@ -47,8 +45,8 @@ if (Jump == true)
 }
 
 private void Update()//düzenli tekrarladıklarımız
-{
-    if (Grounded == true && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+{//Grounded == true &&
+    if ( (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
     {
         if (Input.GetKey(KeyCode.A))
         {

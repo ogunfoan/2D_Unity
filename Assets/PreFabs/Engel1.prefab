@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8962214041393045262}
   - component: {fileID: 1434737456975800075}
   - component: {fileID: 7606917240100485310}
+  - component: {fileID: 3881952645088059054}
   m_Layer: 0
   m_Name: Engel1
   m_TagString: Untagged
@@ -133,3 +134,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe14abc05ecf14344aa12c10d51d8961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3881952645088059054
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4707898885896296477}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7b2dd7919a0a46df86f7898a0650932, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
