@@ -5,4 +5,5 @@ using UnityEngine;
 public class TotalScore : MonoBehaviour
 {
   public static int Tscore;
+  public static int lives=3;
 }

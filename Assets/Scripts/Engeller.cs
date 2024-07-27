@@ -17,6 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) //temas ettiği objenin tagını kontrol ediyor
         {
             SceneManager.LoadScene(_scene.name); // hangi sahneyi yükleyeceğini seçiyoruz
+            TotalScore.lives--;
         }
     }
 }
