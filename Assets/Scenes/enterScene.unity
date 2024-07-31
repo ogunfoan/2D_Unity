@@ -618,6 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa504ae885b34602a38bb1c93da3134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneNum: 1
 --- !u!114 &447631636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,6 +896,10 @@ PrefabInstance:
     - target: {fileID: 268987773286888807, guid: 4bb9840d4f8674614b692cef8192dd95, type: 3}
       propertyPath: m_Name
       value: Button (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191184067051823417, guid: 4bb9840d4f8674614b692cef8192dd95, type: 3}
+      propertyPath: sceneNum
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3289495549572269254, guid: 4bb9840d4f8674614b692cef8192dd95, type: 3}
       propertyPath: m_Pivot.x

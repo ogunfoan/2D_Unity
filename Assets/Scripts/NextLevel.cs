@@ -21,13 +21,15 @@ public class NextLevel : MonoBehaviour
         }
     }
 
+    public int sceneNum;
     public void nextLevel()
     {
-        SceneManager.LoadScene(_Scene.buildIndex + 1);
+        SceneManager.LoadScene(sceneNum);
     }
 
     public void firstLevel()
     {
-        SceneManager.LoadScene(_Scene.buildIndex -4);
+        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(_Scene.buildIndex -4);
     }
 }
